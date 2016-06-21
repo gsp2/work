@@ -10,7 +10,7 @@ int main() {
   //@ ensures count==3;
   {
   count = 0;
-  for (i=0; i<4; i++)
-    count += nonneg(data[2]);
+  for (int j=0; j<4; j++)
+    count += nonneg(data[j]);
   }
 }
