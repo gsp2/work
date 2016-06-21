@@ -1,4 +1,3 @@
-
 /*@ ensures ((!(num<0) || \result==0) && (!(num>=0)  || \result==1));
 */
 int nonneg(int num);
@@ -12,9 +11,6 @@ int main() {
   {
   count = 0;
   for (i=0; i<4; i++)
-    count += nonneg(data[i]);
+    count += nonneg(data[2]);
   }
-} 
-
-  
-    
+}
